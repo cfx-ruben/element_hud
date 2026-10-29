@@ -181,11 +181,11 @@ local function toggleHud(show)
     end
 end
 
-local function hudOn()
+local function showHud()
     toggleHud(true)
 end
 
-local function hudOff()
+local function hideHud()
     toggleHud(false)
 end
 
@@ -1029,5 +1029,5 @@ end)
 exports('getHudState', function()
     return hudState
 end)
-exports('hudOn', hudOn)
-exports('hudOff', hudOff)
+exports('showHud', showHud)
+exports('hideHud', hideHud)
