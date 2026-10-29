@@ -1001,9 +1001,9 @@ end)
 if HUD_SETTINGS_ENABLED then
     lib.addKeybind({
         name = 'settings',
-        description = 'Open HUD Settings',
+        description = HUD_SETTINGS_CONFIG.keybind.text,
         defaultMapper = 'keyboard',
-        defaultKey = HUD_SETTINGS_CONFIG.keybind or 'I',
+        defaultKey = HUD_SETTINGS_CONFIG.keybind.key or 'I',
         onPressed = function()
             toggleSettings(true)
         end

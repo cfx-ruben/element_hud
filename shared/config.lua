@@ -34,7 +34,13 @@ return {
         enabled = true,
 
         -- Only used when hudSettings.enabled is true.
-        keybind = 'I',
+        keybind = {
+            -- Description of the GTA V keyboard shortcut menu
+            text = 'Open HUD Settings',
+
+            -- Action key for the GTA V keyboard shortcut menu
+            key = 'I'
+        },
 
         -- These values are used as the initial player settings. They are also
         -- the forced settings when hudSettings.enabled is false.
