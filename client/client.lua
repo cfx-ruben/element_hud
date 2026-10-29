@@ -1003,7 +1003,7 @@ if HUD_SETTINGS_ENABLED then
         name = 'settings',
         description = 'Open HUD Settings',
         defaultMapper = 'keyboard',
-        default = HUD_SETTINGS_CONFIG.keybind or 'I',
+        defaultKey = HUD_SETTINGS_CONFIG.keybind or 'I',
         onPressed = function()
             toggleSettings(true)
         end
