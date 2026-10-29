@@ -1,5 +1,4 @@
 local config = require('configs.config')
-local bridge = require('bridge.bridge')
 
 local speedUnitSetting = config.units and config.units.speed or (config.useMPH and 'mph' or 'kph')
 local SPEED_MULTIPLIER = speedUnitSetting == 'mph' and 2.23694 or 3.6
@@ -190,8 +189,12 @@ local function hudOff()
     toggleHud(false)
 end
 
+local function getPlayer()
+    return exports.qbx_core:GetPlayerData() or {}
+end
+
 local function getPlayerStats()
-    local playerData = bridge.GetPlayerData()
+    local playerData = getPlayer()
 
     if not playerData or not playerData.metadata then
         lib.print.info('Waiting for player data to load')
