@@ -8,17 +8,8 @@ description "An optimized HUD for fivem made with React Typescript and mantine"
 
 ui_page "web/build/index.html"
 
-files {
-	"web/build/index.html",
-    "web/build/**/*",
-}
+files { "web/build/index.html", "web/build/**/*" }
 
-shared_scripts {
-    "@ox_lib/init.lua",
-    "@qbx_core/modules/lib.lua",
-    "configs/*.lua",
-}
+shared_scripts { "@ox_lib/init.lua", "@qbx_core/modules/lib.lua", "configs/*.lua" }
 
-client_script {
-    "client/**/*",
-}
+client_scripts { "client/**/*" }
