@@ -10,6 +10,6 @@ ui_page "web/build/index.html"
 
 files { "web/build/index.html", "web/build/**/*" }
 
-shared_scripts { "@ox_lib/init.lua", "@qbx_core/modules/lib.lua", "configs/*.lua" }
+shared_scripts { "@ox_lib/init.lua", "@qbx_core/modules/lib.lua", "shared/*.lua" }
 
 client_scripts { "client/**/*" }
