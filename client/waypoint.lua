@@ -1,5 +1,5 @@
 
-local config = require('configs.config')
+local config = require 'shared.config'
 
 if not config.features.waypointHud then return end
 

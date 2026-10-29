@@ -1,4 +1,4 @@
-local config = require('configs.config')
+local config = require 'shared.config'
 
 local speedUnitSetting = config.units and config.units.speed or (config.useMPH and 'mph' or 'kph')
 local SPEED_MULTIPLIER = speedUnitSetting == 'mph' and 2.23694 or 3.6

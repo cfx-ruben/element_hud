@@ -1,4 +1,4 @@
-local config = require 'configs.config'
+local config = require 'shared.config'
 
 ---@param action string The action you wish to target
 ---@param data any The data you wish to send along with this action
