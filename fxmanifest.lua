@@ -22,7 +22,3 @@ shared_scripts {
 client_script {
     "client/**/*",
 }
-
-server_scripts {
-    "server/**/*"
-}
